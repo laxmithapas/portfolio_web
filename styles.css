@@ -198,14 +198,15 @@ section {
 
 .about-content {
     display: flex;
-    flex-direction: column;
-    gap: var(--spacing-md);
+    flex-direction: row;
+    gap: var(--spacing-lg);
     align-items: center;
+    justify-content: flex-start;
 }
 
 .about-text-wrapper {
-    flex: 1;
-    width: 100%;
+    flex: 0 1 50%;
+    width: auto;
 }
 
 .about-text {
@@ -217,9 +218,10 @@ section {
 }
 
 .about-image-wrapper {
-    width: 100%;
-    max-width: 400px;
+    flex: 0 0 40%;
+    width: auto;
     flex-shrink: 0;
+    margin-left: auto;
 }
 
 .about-image {
@@ -409,7 +411,7 @@ section {
 
     .about-content {
         flex-direction: row;
-        align-items: flex-start;
+        align-items: center;
         gap: var(--spacing-lg);
     }
 
@@ -470,7 +472,7 @@ section {
     .section-title {
         font-size: 6.5rem;
     }
-    
+
     .project-title {
         font-size: 1.75rem;
     }
@@ -553,4 +555,3 @@ button:focus-visible {
 .skip-link:focus {
     top: 0;
 }
-
